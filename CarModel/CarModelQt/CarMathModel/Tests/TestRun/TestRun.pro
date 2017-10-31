@@ -1,19 +1,19 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-10-29T20:10:01
+# Project created by QtCreator 2017-10-29T21:59:38
 #
 #-------------------------------------------------
 
+QT       += testlib
+
 QT       -= gui
 
-TARGET = PathTracking
-TEMPLATE = lib
+TARGET = tst_testruntest
+CONFIG   += console
+CONFIG   -= app_bundle
 
-CONFIG(!staticlib){
-    DEFINES += PATHTRACKING_LIBRARY
-    HEADERS += pathtracking_global.h
+TEMPLATE = app
 
-}
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -25,22 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+
 SOURCES += \
-    kinematic.cpp
-#Sources To Be Added Here
-HEADERS += \
-    kinematics.h
-#Headers To Be Added Here
-unix {
+        tst_testruntest.cpp 
 
-    target.path = /usr/lib
-    INSTALLS += target
-}
+DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
-linux{
-# Linux Config Goes Here
-}
-win32{
-# Windows Config Goes Here
+win32: LIBS += -L$$PWD/../../../../../../libs/ -lPathTracking
 
-}
+INCLUDEPATH += $$PWD/../../../../../../libs/headers
+DEPENDPATH += $$PWD/../../../../../../libs/headers
