@@ -1,0 +1,352 @@
+\hypertarget{namespace_path_1_1_kinematic_model}{}\section{Path\+:\+:Kinematic\+Model Namespace Reference}
+\label{namespace_path_1_1_kinematic_model}\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+
+
+Kinematic Model namespace.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Num $>$ }\\Num \hyperlink{namespace_path_1_1_kinematic_model_a913b19ec3bbae4cd59f4567c069f9162}{long\+Velocity} (const Num \&r, const Num \&angular\+VL, const Num \&angular\+VR)
+\begin{DoxyCompactList}\small\item\em this Function is used To Cacluate Longitudinal Velocity of veichle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num $>$ }\\Num \hyperlink{namespace_path_1_1_kinematic_model_a70c3d02758094a3fcaf68c64be01c1af}{rotational\+Velocity} (const Num \&r, const Num \&d\+LR, const Num \&angular\+VL, const Num \&angular\+VR)
+\begin{DoxyCompactList}\small\item\em This template function used to calculate Rotational Velocity of robot. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num \hyperlink{namespace_path_1_1_kinematic_model_a2018f294ab353da7bbbe5dd332a40988}{dX} (const Num \&u1, const Degree \&theta)
+\begin{DoxyCompactList}\small\item\em used to calclate diffrential of x by time \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num \hyperlink{namespace_path_1_1_kinematic_model_a7e6878ff0311921c9cbf53df0c866a04}{dY} (const Num \&u1, const Degree \&theta)
+\begin{DoxyCompactList}\small\item\em used to calclate dy \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num \hyperlink{namespace_path_1_1_kinematic_model_ac07cef86cf3d4945b78dee7da264833c}{d\+Theta} (const Num \&u1, const Num \&lnth, const Degree \&theta)
+\begin{DoxyCompactList}\small\item\em used to calclate differntial of Theta by time \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num $>$ }\\Num \hyperlink{namespace_path_1_1_kinematic_model_a00319aff5cc6aaf82439c744b6aea60f}{d\+Phie} (const Num \&u2)
+\begin{DoxyCompactList}\small\item\em used to calclate d\+Phie \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num $>$ }\\Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB \hyperlink{namespace_path_1_1_kinematic_model_a7cdd5e7f38d713b8e5758d20a0c02b4d}{long\+Velocity} (const Num \&r, const Num \&angular\+VL, const Num \&angular\+VR)
+\begin{DoxyCompactList}\small\item\em this Function is used To Cacluate Longitudinal Velocity of veichle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num $>$ }\\Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB \hyperlink{namespace_path_1_1_kinematic_model_a9f0ac9b3ec75da8cae3bf094e12452fc}{rotational\+Velocity} (const Num \&r, const Num \&d\+LR, const Num \&angular\+VL, const Num \&angular\+VR)
+\begin{DoxyCompactList}\small\item\em This template function used to calculate Rotational Velocity of robot. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB \hyperlink{namespace_path_1_1_kinematic_model_aac9128df256e429b8dced42d09570e40}{dX} (const Num \&u1, const Degree \&theta)
+\begin{DoxyCompactList}\small\item\em used to calclate diffrential of x by time \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB \hyperlink{namespace_path_1_1_kinematic_model_ace9021a98d588b74e2f4ea47f2025828}{dY} (const Num \&u1, const Degree \&theta)
+\begin{DoxyCompactList}\small\item\em used to calclate dy \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB \hyperlink{namespace_path_1_1_kinematic_model_ad62a4223a54672b882f0a83f245eac5a}{d\+Theta} (const Num \&u1, const Num \&lnth, const Degree \&theta)
+\begin{DoxyCompactList}\small\item\em used to calclate differntial of Theta by time \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num $>$ }\\Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB \hyperlink{namespace_path_1_1_kinematic_model_a99891b8ca08d1a54b9dbb88e6f2c5ea8}{d\+Phie} (const Num \&u2)
+\begin{DoxyCompactList}\small\item\em used to calclate d\+Phie \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kinematic Model namespace. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled.
+\end{DoxyAuthor}
+This Namespace Describes The Basic General Kinematic functions for car like {\bfseries robots}.  \begin{DoxyParagraph}{uses the equations}
+{\bfseries  x˙ = u1 cosθ , ~\newline
+ y˙ = u1 sinθ , ~\newline
+ θ˙ = (u1/L) $\ast$ tanφ , ~\newline
+ φ˙ = u2 , ~\newline
+ } 
+\end{DoxyParagraph}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a99891b8ca08d1a54b9dbb88e6f2c5ea8}\label{namespace_path_1_1_kinematic_model_a99891b8ca08d1a54b9dbb88e6f2c5ea8}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!d\+Phie@{d\+Phie}}
+\index{d\+Phie@{d\+Phie}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+Phie()}{dPhie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB Path\+::\+Kinematic\+Model\+::d\+Phie (\begin{DoxyParamCaption}\item[{const Num \&}]{u2 }\end{DoxyParamCaption})}
+
+
+
+used to calclate d\+Phie 
+
+the Template function uses the formula {\bfseries φ˙} = u2. 
+\begin{DoxyParams}{Parameters}
+{\em u2} & the angular velocity of the robot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a00319aff5cc6aaf82439c744b6aea60f}\label{namespace_path_1_1_kinematic_model_a00319aff5cc6aaf82439c744b6aea60f}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!d\+Phie@{d\+Phie}}
+\index{d\+Phie@{d\+Phie}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+Phie()}{dPhie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num Path\+::\+Kinematic\+Model\+::d\+Phie (\begin{DoxyParamCaption}\item[{const Num \&}]{u2 }\end{DoxyParamCaption})}
+
+
+
+used to calclate d\+Phie 
+
+the Template function uses the formula {\bfseries φ˙} = u2. 
+\begin{DoxyParams}{Parameters}
+{\em u2} & the angular velocity of the robot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_ad62a4223a54672b882f0a83f245eac5a}\label{namespace_path_1_1_kinematic_model_ad62a4223a54672b882f0a83f245eac5a}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!d\+Theta@{d\+Theta}}
+\index{d\+Theta@{d\+Theta}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+Theta()}{dTheta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB Path\+::\+Kinematic\+Model\+::d\+Theta (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Num \&}]{lnth,  }\item[{const Degree \&}]{theta }\end{DoxyParamCaption})}
+
+
+
+used to calclate differntial of Theta by time 
+
+the Template function uses the formula {\bfseries θ˙} = (u1/L) $\ast$ tanφ . 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudianl velocity of the robot \\
+\hline
+{\em lngth} & the distance between front wheels and rear wheels axle. \\
+\hline
+{\em theta} & the angle of the robot chassis orientation . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_ac07cef86cf3d4945b78dee7da264833c}\label{namespace_path_1_1_kinematic_model_ac07cef86cf3d4945b78dee7da264833c}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!d\+Theta@{d\+Theta}}
+\index{d\+Theta@{d\+Theta}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+Theta()}{dTheta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num Path\+::\+Kinematic\+Model\+::d\+Theta (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Num \&}]{lnth,  }\item[{const Degree \&}]{theta }\end{DoxyParamCaption})}
+
+
+
+used to calclate differntial of Theta by time 
+
+the Template function uses the formula {\bfseries θ˙} = (u1/L) $\ast$ tanφ . 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudianl velocity of the robot \\
+\hline
+{\em lngth} & the distance between front wheels and rear wheels axle. \\
+\hline
+{\em theta} & the angle of the robot chassis orientation . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_aac9128df256e429b8dced42d09570e40}\label{namespace_path_1_1_kinematic_model_aac9128df256e429b8dced42d09570e40}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!dX@{dX}}
+\index{dX@{dX}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+X()}{dX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB Path\+::\+Kinematic\+Model\+::dX (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Degree \&}]{theta }\end{DoxyParamCaption})}
+
+
+
+used to calclate diffrential of x by time 
+
+the Template function uses the formula {\bfseries x˙} = u1 cosθ. 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudinal velocity of the robot \\
+\hline
+{\em theta} & the angle of the robot chassis orientation . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a2018f294ab353da7bbbe5dd332a40988}\label{namespace_path_1_1_kinematic_model_a2018f294ab353da7bbbe5dd332a40988}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!dX@{dX}}
+\index{dX@{dX}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+X()}{dX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num Path\+::\+Kinematic\+Model\+::dX (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Degree \&}]{theta }\end{DoxyParamCaption})}
+
+
+
+used to calclate diffrential of x by time 
+
+the Template function uses the formula {\bfseries x˙} = u1 cosθ. 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudinal velocity of the robot \\
+\hline
+{\em theta} & the angle of the robot chassis orientation . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_ace9021a98d588b74e2f4ea47f2025828}\label{namespace_path_1_1_kinematic_model_ace9021a98d588b74e2f4ea47f2025828}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!dY@{dY}}
+\index{dY@{dY}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+Y()}{dY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB Path\+::\+Kinematic\+Model\+::dY (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Degree \&}]{theta }\end{DoxyParamCaption})}
+
+
+
+used to calclate dy 
+
+the Template function uses the formula {\bfseries y˙} = u1 sinθ. 
+\begin{DoxyParams}{Parameters}
+{\em theta} & the angle of the robot chassis orientation . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a7e6878ff0311921c9cbf53df0c866a04}\label{namespace_path_1_1_kinematic_model_a7e6878ff0311921c9cbf53df0c866a04}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!dY@{dY}}
+\index{dY@{dY}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{d\+Y()}{dY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num Path\+::\+Kinematic\+Model\+::dY (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Degree \&}]{theta }\end{DoxyParamCaption})}
+
+
+
+used to calclate dy 
+
+the Template function uses the formula {\bfseries y˙} = u1 sinθ. 
+\begin{DoxyParams}{Parameters}
+{\em theta} & the angle of the robot chassis orientation . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a913b19ec3bbae4cd59f4567c069f9162}\label{namespace_path_1_1_kinematic_model_a913b19ec3bbae4cd59f4567c069f9162}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!long\+Velocity@{long\+Velocity}}
+\index{long\+Velocity@{long\+Velocity}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{long\+Velocity()}{longVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num Path\+::\+Kinematic\+Model\+::long\+Velocity (\begin{DoxyParamCaption}\item[{const Num \&}]{r,  }\item[{const Num \&}]{angular\+VL,  }\item[{const Num \&}]{angular\+VR }\end{DoxyParamCaption})}
+
+
+
+this Function is used To Cacluate Longitudinal Velocity of veichle. 
+
+This Is a template function used to calculate the longitudinal Velocity of Robot according to the relation 
+\begin{DoxyParams}{Parameters}
+{\em Num} & describes The Type of return and other parameters \\
+\hline
+{\em r} & describes The radius of wheeles used in the car. \\
+\hline
+{\em angular\+VL} & angular velocity of left Wheel. \\
+\hline
+{\em angular\+VR} & angular velocity of right Wheel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Longtiudnal of car Velocity. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a7cdd5e7f38d713b8e5758d20a0c02b4d}\label{namespace_path_1_1_kinematic_model_a7cdd5e7f38d713b8e5758d20a0c02b4d}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!long\+Velocity@{long\+Velocity}}
+\index{long\+Velocity@{long\+Velocity}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{long\+Velocity()}{longVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB Path\+::\+Kinematic\+Model\+::long\+Velocity (\begin{DoxyParamCaption}\item[{const Num \&}]{r,  }\item[{const Num \&}]{angular\+VL,  }\item[{const Num \&}]{angular\+VR }\end{DoxyParamCaption})}
+
+
+
+this Function is used To Cacluate Longitudinal Velocity of veichle. 
+
+This Is a template function used to calculate the longitudinal Velocity of Robot according to the relation 
+\begin{DoxyParams}{Parameters}
+{\em Num} & describes The Type of return and other parameters \\
+\hline
+{\em r} & describes The radius of wheeles used in the car. \\
+\hline
+{\em angular\+VL} & angular velocity of left Wheel. \\
+\hline
+{\em angular\+VR} & angular velocity of right Wheel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Longtiudnal of car Velocity. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a9f0ac9b3ec75da8cae3bf094e12452fc}\label{namespace_path_1_1_kinematic_model_a9f0ac9b3ec75da8cae3bf094e12452fc}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!rotational\+Velocity@{rotational\+Velocity}}
+\index{rotational\+Velocity@{rotational\+Velocity}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{rotational\+Velocity()}{rotationalVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num D\+E\+C\+L\+A\+R\+\_\+\+L\+IB Path\+::\+Kinematic\+Model\+::rotational\+Velocity (\begin{DoxyParamCaption}\item[{const Num \&}]{r,  }\item[{const Num \&}]{d\+LR,  }\item[{const Num \&}]{angular\+VL,  }\item[{const Num \&}]{angular\+VR }\end{DoxyParamCaption})}
+
+
+
+This template function used to calculate Rotational Velocity of robot. 
+
+the function uses the formula {\bfseries u2} =r/2R $\ast$ (ψ˙r −ψ˙l). 
+\begin{DoxyParams}{Parameters}
+{\em r} & describes the radius of the wheel. \\
+\hline
+{\em d\+LR} & describes the distance between the left and right wheels \\
+\hline
+{\em angular\+VL} & angular velocity of left Wheel. \\
+\hline
+{\em angular\+VR} & angular velocity of right Wheel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Velocity of rotation. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_kinematic_model_a70c3d02758094a3fcaf68c64be01c1af}\label{namespace_path_1_1_kinematic_model_a70c3d02758094a3fcaf68c64be01c1af}} 
+\index{Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}!rotational\+Velocity@{rotational\+Velocity}}
+\index{rotational\+Velocity@{rotational\+Velocity}!Path\+::\+Kinematic\+Model@{Path\+::\+Kinematic\+Model}}
+\subsubsection{\texorpdfstring{rotational\+Velocity()}{rotationalVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num Path\+::\+Kinematic\+Model\+::rotational\+Velocity (\begin{DoxyParamCaption}\item[{const Num \&}]{r,  }\item[{const Num \&}]{d\+LR,  }\item[{const Num \&}]{angular\+VL,  }\item[{const Num \&}]{angular\+VR }\end{DoxyParamCaption})}
+
+
+
+This template function used to calculate Rotational Velocity of robot. 
+
+the function uses the formula {\bfseries u2} =r/2R $\ast$ (ψ˙r −ψ˙l). 
+\begin{DoxyParams}{Parameters}
+{\em r} & describes the radius of the wheel. \\
+\hline
+{\em d\+LR} & describes the distance between the left and right wheels \\
+\hline
+{\em angular\+VL} & angular velocity of left Wheel. \\
+\hline
+{\em angular\+VR} & angular velocity of right Wheel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Velocity of rotation. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Mohamed Khaled. 
+\end{DoxyAuthor}

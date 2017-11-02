@@ -1,5 +1,6 @@
 #include <QString>
 #include <QtTest>
+#include "kinematics.h"
 class TestRunTest : public QObject
 {
     Q_OBJECT
@@ -17,6 +18,9 @@ TestRunTest::TestRunTest()
 
 void TestRunTest::testCase1()
 {
+    int localDX = Path::KinematicModel::dX(5, 2.0 * 360 / 3.14);
+    qDebug() << localDX;
+
 }
 
 QTEST_MAIN(TestRunTest)

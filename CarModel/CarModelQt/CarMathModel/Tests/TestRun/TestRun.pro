@@ -31,7 +31,9 @@ SOURCES += \
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
-win32: LIBS += -L$$PWD/../../../../../../libs/ -lPathTracking
 
-INCLUDEPATH += $$PWD/../../../../../../libs/headers
-DEPENDPATH += $$PWD/../../../../../../libs/headers
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../build-CarModel-Desktop_Qt_5_9_0_MinGW_32bit-Debug/CarMathModel/PathTracking/release/ -lPathTracking
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../build-CarModel-Desktop_Qt_5_9_0_MinGW_32bit-Debug/CarMathModel/PathTracking/debug/ -lPathTracking
+
+INCLUDEPATH += $$PWD/../../PathTracking
+DEPENDPATH += $$PWD/../../PathTracking

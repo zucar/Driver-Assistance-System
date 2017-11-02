@@ -29,7 +29,8 @@ SOURCES += \
     kinematic.cpp
 #Sources To Be Added Here
 HEADERS += \
-    kinematics.h
+    kinematics.h \
+    kinematicimpls.h
 #Headers To Be Added Here
 unix {
 
