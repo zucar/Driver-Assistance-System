@@ -1,11 +1,11 @@
 #ifndef KINEMATICIMPLS_H
 #define KINEMATICIMPLS_H
 namespace Path {
-namespace KinematicModels {
+namespace KinematicModel {
 
 /*! \brief this Function is used To Cacluate Longitudinal Velocity of veichle.
  *  \details This Is a template function used to calculate the longitudinal Velocity of Robot according to the relation
- *  \param Num describes The Type of return and other parameters
+*  \param Num describes The Type of return and other parameters
  *  \param r describes The radius of wheeles used in the car.
  * \param angularVL angular velocity of left Wheel.
  * \param angularVR angular velocity of right Wheel.

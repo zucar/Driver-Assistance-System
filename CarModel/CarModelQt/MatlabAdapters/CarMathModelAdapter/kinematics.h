@@ -20,20 +20,13 @@ namespace Path {
      *  </b>
      *  \endparblock
      */
-
-
-    namespace KinematicModels {
+    namespace KinematicModel {
         template<typename Num> Num DECLAR_LIB longVelocity(const Num& r, const Num& angularVL, const Num& angularVR);
         template<typename Num> Num DECLAR_LIB rotationalVelocity(const Num& r, const Num& dLR, const Num& angularVL, const Num& angularVR);
         template<typename Num, typename Degree> Num DECLAR_LIB dX(const Num& u1, const Degree& theta);
         template<typename Num, typename Degree> Num DECLAR_LIB dY(const Num& u1, const Degree& theta);
         template<typename Num, typename Degree> Num DECLAR_LIB dTheta(const Num& u1, const Num& lnth, const Degree& theta);
         template<typename Num> Num DECLAR_LIB dPhie(const Num& u2);
-
-
-
-
-
     }
 }
 #include "kinematicimpls.h"

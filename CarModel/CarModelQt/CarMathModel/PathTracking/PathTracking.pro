@@ -8,7 +8,7 @@ QT       -= gui
 
 TARGET = PathTracking
 TEMPLATE = lib
-
+DEFINES += USE_QT
 CONFIG(!staticlib){
     DEFINES += PATHTRACKING_LIBRARY
     HEADERS += pathtracking_global.h
@@ -26,11 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    kinematic.cpp
+    kinematics.cpp \
+    cardescription.cpp \
+    kinematicmodel.cpp
 #Sources To Be Added Here
 HEADERS += \
     kinematics.h \
-    kinematicimpls.h
+    kinematicimpls.h \
+    cardescription.h \
+    kinematicmodel.h
 #Headers To Be Added Here
 unix {
 
@@ -43,5 +47,37 @@ linux{
 }
 win32{
 # Windows Config Goes Here
+ win32-msvc{
+    #...
+DESTDIR += $$_PRO_FILE_PWD_\..\..\..\libs
+
+HSRCPATH = $$_PRO_FILE_PWD_\*.h
+HSRCPATH ~= s,/,\\,g
+
+HDSTPATH = $$_PRO_FILE_PWD_\..\..\..\includes
+HDSTPATH ~= s,/,\\,g
+debug{
+OSRCPATH = $$OUT_PWD\debug\*.obj
+}release{
+OSRCPATH = $$OUT_PWD\release\*.obj
 
 }
+OSRCPATH ~= s,/,\\,g
+
+ODSTPATH = $$_PRO_FILE_PWD_\..\..\..\libs
+ODSTPATH ~= s,/,\\,g
+
+COPY_CMD_INCLUDES = "xcopy $$HSRCPATH $$HDSTPATH /siy"
+COPY_CMD_OBJS = "xcopy $$OSRCPATH $$ODSTPATH /siy"
+
+QMAKE_POST_LINK += "$$COPY_CMD_INCLUDES && $$COPY_CMD_OBJS"
+
+}
+
+
+
+}
+
+
+
+
