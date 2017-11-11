@@ -25,16 +25,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += \
-    kinematics.cpp \
-    cardescription.cpp \
-    kinematicmodel.cpp
-#Sources To Be Added Here
 HEADERS += \
-    kinematics.h \
-    kinematicimpls.h \
-    cardescription.h \
-    kinematicmodel.h
+    basekinematicmodel/kinematicimpls.h \
+    basekinematicmodel/kinematicmodel.h \
+    basekinematicmodel/kinematics.h \
+    carkinematics/carkinematics.h \
+    frenetkinematics/FrenetKinematics.h \
+    cardescription.h
+
+SOURCES += \
+    basekinematicmodel/kinematicmodel.cpp \
+    basekinematicmodel/kinematics.cpp \
+    cardescription.cpp
+
+
+
 #Headers To Be Added Here
 unix {
 
@@ -51,7 +56,7 @@ win32{
     #...
 DESTDIR += $$_PRO_FILE_PWD_\..\..\..\libs
 
-HSRCPATH = $$_PRO_FILE_PWD_\*.h
+HSRCPATH = $$_PRO_FILE_PWD_\\*.h
 HSRCPATH ~= s,/,\\,g
 
 HDSTPATH = $$_PRO_FILE_PWD_\..\..\..\includes
@@ -59,7 +64,7 @@ HDSTPATH ~= s,/,\\,g
 debug{
 OSRCPATH = $$OUT_PWD\debug\*.obj
 }release{
-OSRCPATH = $$OUT_PWD\release\*.obj
+OSRCPATH = $$OUT_PWD\debug\*.obj
 
 }
 OSRCPATH ~= s,/,\\,g
@@ -77,7 +82,6 @@ QMAKE_POST_LINK += "$$COPY_CMD_INCLUDES && $$COPY_CMD_OBJS"
 
 
 }
-
 
 
 
