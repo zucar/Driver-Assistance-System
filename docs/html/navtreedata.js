@@ -8,6 +8,10 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", null ]
       ] ]
     ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ]
+    ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ]
     ] ]
@@ -16,7 +20,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"d1/d76/kinematicimpls_8h_source.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

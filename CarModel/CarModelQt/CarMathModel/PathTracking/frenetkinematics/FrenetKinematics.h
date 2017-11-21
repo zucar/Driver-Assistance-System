@@ -4,6 +4,9 @@
 #include <pathtracking_global.h>
 
 namespace Path {
+     /*! \brief namespace used to define frenet Model For Car like robots
+     *
+     */
     namespace FrenetModel {
 
     /*! \brief this function is used to calculate differntial of S .

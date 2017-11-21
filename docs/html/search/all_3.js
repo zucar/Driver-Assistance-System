@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rotationalvelocity',['rotationalVelocity',['../d5/d57/namespace_path_1_1_kinematic_model.html#a70c3d02758094a3fcaf68c64be01c1af',1,'Path::KinematicModel::rotationalVelocity(const Num &amp;r, const Num &amp;dLR, const Num &amp;angularVL, const Num &amp;angularVR)'],['../d5/d57/namespace_path_1_1_kinematic_model.html#a9f0ac9b3ec75da8cae3bf094e12452fc',1,'Path::KinematicModel::rotationalVelocity(const Num &amp;r, const Num &amp;dLR, const Num &amp;angularVL, const Num &amp;angularVR)']]]
+  ['longvelocity',['longVelocity',['../d6/d03/namespace_path_1_1_kinematic_models.html#aaea8f9ef18514642886a2a79bb862202',1,'Path::KinematicModels::longVelocity(const Num &amp;r, const Num &amp;angularVL, const Num &amp;angularVR)'],['../d6/d03/namespace_path_1_1_kinematic_models.html#a1d71a0052e6781a914b7734f61ccda59',1,'Path::KinematicModels::longVelocity(const Num &amp;r, const Num &amp;angularVL, const Num &amp;angularVR)']]]
 ];

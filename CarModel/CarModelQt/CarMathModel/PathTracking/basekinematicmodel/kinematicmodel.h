@@ -35,11 +35,14 @@ public:
     double getU2() const;
     void setU2(double value);
 
+    double getPhie() const;
+    void setPhie(double value);
+
 private:
     CarDescription *carDesc;
     double angularVL;
     double angularVR;
-    double u1, theta, u2;
+    double u1, theta, u2, phie;
 protected:
 };
 

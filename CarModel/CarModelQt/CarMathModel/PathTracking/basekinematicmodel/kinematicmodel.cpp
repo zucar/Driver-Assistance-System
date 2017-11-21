@@ -14,17 +14,17 @@ double KinematicModel::rotationalVelocity() const
 
 double KinematicModel::dX() const
 {
-    return u1 * std::cos(toDegree(theta));
+    return u1 * std::cos(theta);
 }
 
 double KinematicModel::dY() const
 {
-    return u1 * std::sin(toDegree(theta));
+    return u1 * std::sin(theta);
 }
 
 double KinematicModel::dTheta() const
 {
-    return u1 * std::tan(toDegree(theta)) / carDesc->getLength();
+    return (double)(u1 / carDesc->getLength())* std::tan(phie) ;
 }
 
 double KinematicModel::dPhie() const
@@ -95,4 +95,14 @@ double KinematicModel::getU2() const
 void KinematicModel::setU2(double value)
 {
     u2 = value;
+}
+
+double KinematicModel::getPhie() const
+{
+    return phie;
+}
+
+void KinematicModel::setPhie(double value)
+{
+    phie = value;
 }

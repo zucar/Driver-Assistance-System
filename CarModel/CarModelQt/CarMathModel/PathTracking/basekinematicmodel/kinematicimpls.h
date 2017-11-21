@@ -1,6 +1,23 @@
 #ifndef KINEMATICIMPLS_H
 #define KINEMATICIMPLS_H
+/*!
+ * \brief GLobal Namespace For All Car-like Robot Calculations
+ *
+ */
 namespace Path {
+/*! \brief Kinematic Model namespace.
+ *  \author Mohamed Khaled.
+ *  \details This Namespace Describes The Basic General Kinematic functions for car like \b robots.
+ *  \image html carkinematicmodel.png
+ *  \par uses the equations
+ *  <b>
+ *   x˙ = u1 cosθ , <br/>
+ *   y˙ = u1 sinθ , <br/>
+ *   θ˙ = (u1/L) * tanφ , <br/>
+ *   φ˙ = u2 , <br/>
+ *  </b>
+ *  \endparblock
+ */
 namespace KinematicModels {
 
 /*! \brief this Function is used To Cacluate Longitudinal Velocity of veichle.

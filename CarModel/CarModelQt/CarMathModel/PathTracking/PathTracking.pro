@@ -56,17 +56,18 @@ win32{
     #...
 DESTDIR += $$_PRO_FILE_PWD_\..\..\..\libs
 
-HSRCPATH = $$_PRO_FILE_PWD_\\*.h
+HSRCPATH = "$$_PRO_FILE_PWD_\\*.h"
 HSRCPATH ~= s,/,\\,g
 
 HDSTPATH = $$_PRO_FILE_PWD_\..\..\..\includes
 HDSTPATH ~= s,/,\\,g
-debug{
-OSRCPATH = $$OUT_PWD\debug\*.obj
-}release{
-OSRCPATH = $$OUT_PWD\debug\*.obj
 
-}
+OSRCPATH = "$$OUT_PWD\*.obj"
+
+message($$OUT_PWD)
+message($$OSRCPATH)
+
+
 OSRCPATH ~= s,/,\\,g
 
 ODSTPATH = $$_PRO_FILE_PWD_\..\..\..\libs
