@@ -8,6 +8,7 @@
 *.lai
 *.so
 *.dll
+*.obj
 *.dylib
 
 # Qt-es
@@ -44,3 +45,9 @@ target_wrapper.*
 
 # QtCtreator CMake
 CMakeLists.txt.user*
+
+
+
+# Folders
+libs
+includes

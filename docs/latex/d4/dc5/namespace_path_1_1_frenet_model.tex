@@ -1,0 +1,144 @@
+\hypertarget{namespace_path_1_1_frenet_model}{}\section{Path\+:\+:Frenet\+Model Namespace Reference}
+\label{namespace_path_1_1_frenet_model}\index{Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}}
+
+
+namespace used to define frenet Model For Car like robots  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num \hyperlink{namespace_path_1_1_frenet_model_aad575bf8ab643cee69a04fd260537bf5}{dS} (const Num \&u1, const Num \&dc, const Degree \&theta\+\_\+e, const Degree \&phie, const Num \&lnth, const Num \&l1, const Num \&l2)
+\begin{DoxyCompactList}\small\item\em this function is used to calculate differntial of S . \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num \hyperlink{namespace_path_1_1_frenet_model_ad4b6f15d18cda83a0b49196c7e4c39a7}{dD} (const Num \&u1, const Degree \&theta\+\_\+e, const Degree \&phie, const Num \&lnth, const Num \&l1, const Num \&l2)
+\begin{DoxyCompactList}\small\item\em this function is used to calculate differntial of d . \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num , typename Degree $>$ }\\Num \hyperlink{namespace_path_1_1_frenet_model_a353a17af4ea254880a0186a6d82a98bc}{d\+Theta} (const Num \&u1, const Num \&lnth, const Degree \&phie, const Degree \&sdot, const Degree \&c)
+\begin{DoxyCompactList}\small\item\em used to calclate differntial of Theta by time \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Num $>$ }\\Num \hyperlink{namespace_path_1_1_frenet_model_a5412f0a54c36b34975e06b311a411122}{d\+Phie} (const Num \&u2)
+\begin{DoxyCompactList}\small\item\em used to calclate d\+Phie \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+namespace used to define frenet Model For Car like robots 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_path_1_1_frenet_model_ad4b6f15d18cda83a0b49196c7e4c39a7}\label{namespace_path_1_1_frenet_model_ad4b6f15d18cda83a0b49196c7e4c39a7}} 
+\index{Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}!dD@{dD}}
+\index{dD@{dD}!Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}}
+\subsubsection{\texorpdfstring{d\+D()}{dD()}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num Path\+::\+Frenet\+Model\+::dD (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Degree \&}]{theta\+\_\+e,  }\item[{const Degree \&}]{phie,  }\item[{const Num \&}]{lnth,  }\item[{const Num \&}]{l1,  }\item[{const Num \&}]{l2 }\end{DoxyParamCaption})}
+
+
+
+this function is used to calculate differntial of d . 
+
+the Template function uses the formula {\bfseries d˙} = u1 $\ast$ ( sin(θe) + ( (tanφ)/L) $\ast$ ( l1$\ast$cos(θe) -\/ l2$\ast$sin(θe) ) ) ) . 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudianl velocity of the robot \\
+\hline
+{\em lnth} & the distance between front wheels and rear wheels axle. \\
+\hline
+{\em phie} & The Vehicle\textquotesingle{}s steering angle. \\
+\hline
+{\em theta\+\_\+e} & the angle characterizing the orientation of the robot chassis with respect to the fram Fs. \\
+\hline
+{\em l1} & the coordinate of P (l1,l2) expressed in the basis of Fm. \\
+\hline
+{\em l2} & the coordinate of P (l1,l2) expressed in the basis of Fm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Sherif Abaza. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_frenet_model_a5412f0a54c36b34975e06b311a411122}\label{namespace_path_1_1_frenet_model_a5412f0a54c36b34975e06b311a411122}} 
+\index{Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}!d\+Phie@{d\+Phie}}
+\index{d\+Phie@{d\+Phie}!Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}}
+\subsubsection{\texorpdfstring{d\+Phie()}{dPhie()}}
+{\footnotesize\ttfamily template$<$typename Num $>$ \\
+Num Path\+::\+Frenet\+Model\+::d\+Phie (\begin{DoxyParamCaption}\item[{const Num \&}]{u2 }\end{DoxyParamCaption})}
+
+
+
+used to calclate d\+Phie 
+
+the Template function uses the formula {\bfseries φ˙} = u2. 
+\begin{DoxyParams}{Parameters}
+{\em u2} & the angular velocity of the robot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Sherif Abaza. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_frenet_model_aad575bf8ab643cee69a04fd260537bf5}\label{namespace_path_1_1_frenet_model_aad575bf8ab643cee69a04fd260537bf5}} 
+\index{Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}!dS@{dS}}
+\index{dS@{dS}!Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}}
+\subsubsection{\texorpdfstring{d\+S()}{dS()}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num Path\+::\+Frenet\+Model\+::dS (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Num \&}]{dc,  }\item[{const Degree \&}]{theta\+\_\+e,  }\item[{const Degree \&}]{phie,  }\item[{const Num \&}]{lnth,  }\item[{const Num \&}]{l1,  }\item[{const Num \&}]{l2 }\end{DoxyParamCaption})}
+
+
+
+this function is used to calculate differntial of S . 
+
+the Template function uses the formula {\bfseries S˙} = ( u1 / ( 1-\/dc(s) ) ) $\ast$ ( cos(θe) -\/ ( (tanφ)/L) $\ast$ ( l2$\ast$cos(θe) + l1$\ast$sin(θe) ) ) . 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudianl velocity of the robot \\
+\hline
+{\em lnth} & the distance between front wheels and rear wheels axle. \\
+\hline
+{\em phie} & The Vehicle\textquotesingle{}s steering angle. \\
+\hline
+{\em theta\+\_\+e} & the angle characterizing the orientation of the robot chassis with respect to the fram Fs. \\
+\hline
+{\em l1} & the coordinate of P (l1,l2) expressed in the basis of Fm. \\
+\hline
+{\em l2} & the coordinate of P (l1,l2) expressed in the basis of Fm. \\
+\hline
+{\em dc} & is the differential eq of the curvature c(\+S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Sherif Abaza. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{namespace_path_1_1_frenet_model_a353a17af4ea254880a0186a6d82a98bc}\label{namespace_path_1_1_frenet_model_a353a17af4ea254880a0186a6d82a98bc}} 
+\index{Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}!d\+Theta@{d\+Theta}}
+\index{d\+Theta@{d\+Theta}!Path\+::\+Frenet\+Model@{Path\+::\+Frenet\+Model}}
+\subsubsection{\texorpdfstring{d\+Theta()}{dTheta()}}
+{\footnotesize\ttfamily template$<$typename Num , typename Degree $>$ \\
+Num Path\+::\+Frenet\+Model\+::d\+Theta (\begin{DoxyParamCaption}\item[{const Num \&}]{u1,  }\item[{const Num \&}]{lnth,  }\item[{const Degree \&}]{phie,  }\item[{const Degree \&}]{sdot,  }\item[{const Degree \&}]{c }\end{DoxyParamCaption})}
+
+
+
+used to calclate differntial of Theta by time 
+
+the Template function uses the formula {\bfseries θ˙} = (u1/L) $\ast$ tanφ -\/ S˙\+C(\+S) . 
+\begin{DoxyParams}{Parameters}
+{\em u1} & the longitudianl velocity of the robot \\
+\hline
+{\em lnth} & the distance between front wheels and rear wheels axle. \\
+\hline
+{\em phie} & The Vehicle\textquotesingle{}s steering angle. \\
+\hline
+{\em sdot} & is the differential eqquation of the curvilinear abscissa \\
+\hline
+{\em c} & the curvature c(\+S) of C at Ps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+of Type Num the current diffrential. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Sherif Abaza. 
+\end{DoxyAuthor}
