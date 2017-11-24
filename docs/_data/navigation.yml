@@ -5,7 +5,7 @@ main:
   - title: "doc"
     url: /html/index.html
   - title: "about"
-    url: /about.html
+    url: /about.md
 #  - title: "submenu"
 #    url: /
 #    children: 

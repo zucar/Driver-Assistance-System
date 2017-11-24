@@ -7,7 +7,7 @@ description              : "A project in charge of planning, design and implemen
 favicon                  : "/assets/images/"
 avatar                   : "/assets/images/"
 url                      : "https://zucar.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/ZuCar2018" # the subpath of your site, e.g. "/blog" leave blank if no subpath
+baseurl                  : "/ZuCar2018/docs" # the subpath of your site, e.g. "/blog" leave blank if no subpath
 
 # Site Author
 author:
