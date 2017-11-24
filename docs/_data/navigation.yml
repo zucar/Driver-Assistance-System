@@ -1,0 +1,17 @@
+# main links
+main:
+  - title: "home"
+    url: /
+  - title: "doc"
+    url: /html/index.html
+  - title: "about"
+    url: /about.html
+#  - title: "submenu"
+#    url: /
+#    children: 
+#      - title: "item 1"
+#        url: /404
+#      - title: "item 2"
+#        url: /404
+#  - title: "subscribe"
+#    url: /feed.xml
